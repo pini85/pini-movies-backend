@@ -1,6 +1,8 @@
 require("dotenv-flow").config({
   path: "./config",
 });
+console.log("MONGO_URI:", process.env.MONGO_URI); // Debugging line
+
 const express = require("express");
 const app = express();
 const bodyParser = require("body-parser");
